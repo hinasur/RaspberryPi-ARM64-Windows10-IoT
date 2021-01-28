@@ -22,10 +22,31 @@ Partial Class Form_Main
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.components = New System.ComponentModel.Container()
+        Me.Timer_Main = New System.Windows.Forms.Timer(Me.components)
+        Me.TextBox_Log = New System.Windows.Forms.TextBox()
+        Me.SuspendLayout()
+        '
+        'TextBox_Log
+        '
+        Me.TextBox_Log.Location = New System.Drawing.Point(135, 36)
+        Me.TextBox_Log.Name = "TextBox_Log"
+        Me.TextBox_Log.Size = New System.Drawing.Size(543, 25)
+        Me.TextBox_Log.TabIndex = 0
+        '
+        'Form_Main
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox_Log)
+        Me.Name = "Form_Main"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents Timer_Main As Timer
+    Friend WithEvents TextBox_Log As TextBox
 End Class
