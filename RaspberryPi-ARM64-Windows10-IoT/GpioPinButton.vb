@@ -10,16 +10,23 @@ Public Class GpioPinButton
     End Sub
 
     ''' <summary>
-    ''' 接続されているPinのいずれかがHIGHの時Trueを返す
+    ''' 接続されているPinのいずれかがHIGHになった1回目だけTrueを返す
     ''' </summary>
-    ''' <returns>0:LOW, 1:HIGH</returns>
+    ''' <returns>0:立ち上がっていない, 1:立ち上がった</returns>
     Public Function IsPushed() As Boolean
 
-        If m_testPin.GpioPin.Read = 1 Then
-            Return True
+        If m_testPin.GpioPin.Read <> 1 Then
+            m_testPin.PinState_pre = 0
+            Return False
         End If
 
-        Return False
+        If m_testPin.PinState_pre = 1 Then
+            m_testPin.PinState_pre = 1
+            Return False
+        End If
+
+        m_testPin.PinState_pre = 1
+        Return True
 
     End Function
 
@@ -57,6 +64,7 @@ Public Class GpioPinButton
 
         Public Property GpioPin As GpioPin
         Public MustOverride Property GpioNum As Integer
+        Public Property PinState_pre As Integer = 0
 
     End Class
 

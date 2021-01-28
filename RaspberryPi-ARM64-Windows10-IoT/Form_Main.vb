@@ -23,9 +23,11 @@
             m_socketManager.SendMessage(pushedButtonNum)
             TextBox_Log.Text = "Pushed"
 
-        End If
+        Else
 
-        TextBox_Log.Text = "NONE"
+            TextBox_Log.Text = "NONE"
+
+        End If
 
     End Sub
 End Class
