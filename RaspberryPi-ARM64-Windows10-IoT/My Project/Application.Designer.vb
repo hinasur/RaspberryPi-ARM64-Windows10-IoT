@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.RaspberryPi_ARM64_Windows10_IoT.Form1
+            Me.MainForm = Global.RaspberryPi_ARM64_Windows10_IoT.Form_Main
         End Sub
     End Class
 End Namespace
