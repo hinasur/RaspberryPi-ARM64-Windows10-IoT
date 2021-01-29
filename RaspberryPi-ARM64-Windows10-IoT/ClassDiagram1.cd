@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RaspberryPi_ARM64_Windows10_IoT.Form_Main">
+    <Position X="5" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAAAAACEAAACAEAAAAAABAAAAAAAEAA=</HashCode>
+      <FileName>Form_Main.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RaspberryPi_ARM64_Windows10_IoT.GpioPinButton">
+    <Position X="1.5" Y="3.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="RaspberryPi_ARM64_Windows10_IoT.GpioPinButton.ButtonPin">
+        <TypeIdentifier>
+          <NewMemberFileName>GpioPinButton.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RaspberryPi_ARM64_Windows10_IoT.GpioPinButton.TestPin" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GpioPinButton.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAgAgAAAA=</HashCode>
+      <FileName>GpioPinButton.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RaspberryPi_ARM64_Windows10_IoT.SocketManager">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SocketManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RaspberryPi_ARM64_Windows10_IoT.My.MyApplication">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RaspberryPi_ARM64_Windows10_IoT.My.MySettings" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABEAAAAABAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="RaspberryPi_ARM64_Windows10_IoT.My.MySettingsProperty" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="RaspberryPi_ARM64_Windows10_IoT.My.Resources.Resources" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>
